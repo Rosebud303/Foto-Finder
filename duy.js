@@ -1,0 +1,3 @@
+function getClass() {
+  document.querySelector('');
+};
