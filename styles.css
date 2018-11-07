@@ -88,20 +88,16 @@ h1 {
 }
 
 .view-add-buttons {
-  display: grid;
-  grid-template-columns: 1fr .87fr .87fr 1fr;
-  grid-template-areas:
-  "left mida midb right"; 
-  grid-gap: 1px;
+  display: flex;
+  justify-content: space-between;
+  width: 47.5%;
+  margin: auto;
 }
 
-.view-favorites-button {
-  grid-area: mida;
+.view-favorites-button, .add-to-album {
+  width: 40%;
 }
 
-.add-to-album {
-  grid-area: midb;
-}
 
 input[type="file"] {
   display: none;
@@ -146,7 +142,7 @@ input[type="file"] {
 
 .full-card {
   width: 100%;
-  height: 100%;
+  height: auto;
   border: 1px solid black;
   background-color: white;
   display: inline-block;
