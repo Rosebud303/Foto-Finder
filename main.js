@@ -126,8 +126,8 @@ function appendCard(photo) {
         <img src="${photo.file}" class="image">
         <p contenteditable="true" class="edit caption-card">${photo.caption}</p>
         <div class="trash-fav-button">
-          <button onclick="deleteCard(${photo.id})" class="trash-button">trash</button>
-          <button onclick="favoriteCard(${photo.id})" class="favorite-button">heart</button>
+          <img onclick="deleteCard(${photo.id})" src="delete.svg" class="favorite-svg svg">
+          <img onclick="favoriteCard(${photo.id})" src="favorite.svg" class="favorite-button svg">
         </div>
      </div>
     </article>`
