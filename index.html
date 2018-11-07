@@ -1,50 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" type="text/css" href="normalize.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="stylesheet" type="text/css" href="https://fonts.google.com/#QuickUsePlace:quickUse%2FFamily:Open+Sans">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <title>Foto Finder</title>
 </head>
 <body>
   <section class="top-half">
-    <article>
-      <h1>Foto Finder</h1>
-      <input type="" name="" class="search-input" placeholder="Search">
-      <button class="search-button"><img src="#"></button>
+    <nav class="nav-bar">
+      <h1>Foto <span><img class="foto-svg" src="foto-finder.svg"></span> Finder</h1>
+      <section class="search-section">
+        <input type="" name="" class="search-input" placeholder="Search">
+        <button class="search-button"><img src="#"></button>
+      </section>
+    </nav>
+    <form class="title-caption-section">
+      <article class="title-and-input">
+       <section>
+        <label for="title">Title</label>
+      </section>
+      <input type="text" id="title" class="title-input tlc-input">
     </article>
-    <article>
-      <p class="title-tag">title</p>
-      <input type="" name="" class="title-input">
+    <article class="caption-and-input tlc-input">
+      <article>
+        <label for="caption">Caption</label>
+      </article>
+      <input type="text" id="caption" class="caption-input tlc-input">
     </article>
-    <article>
-      <p class="caption-tag">caption</p>
-      <input type="" name="" class="caption-input">
-    </article>
-    <button class="choose-file-button">Choose File</button>
-    <section>
-      <button class="view-favorites-buton">View Favorites</button>
-      <button class="add-to-album">Add to Album</button>
-    </section>
-  </section>
-  <section class="bottom-half">
-    <article class ='generated-card'>
-    <div class="card-challenger-names">
-      <h4>${player1}</h4>
-      <p class = 'vs-symbol'>vs</p>
-      <h4>${player2}</h4>
-    </div>
-    <h1 class ='winner-chicken-dinner'>${winner}</h1>
-    <p>WINNER</p>
-    <div>
-      <button class='delete-button'>X</button>
-    </div>
-    <div>
-      <button class='favorite-button'><img src='#'></button>
-    </div>
-  </article>
-  </section>
-  <script type="text/javascript" src="duy.js"></script>
-  <script type="text/javascript" src="photo.js"></script>
-  <script type="text/javascript" src="main.js"></script>
+    <label class="label-file-input tlc-input button"><input type="file" id="image-id" class="file-image" accept="image/png, image/jpeg">Choose File</label>
+  </form>
+</article>
+<section class="view-add-buttons"> 
+  <button class="view-favorites-button button">View <span class="num-of-favs"></span> Favorites</button>
+  <button class="add-to-album button">Add to Album</button>
+</section>
+<section class="bottom-half">
+</section>
+<script type="text/javascript" src="duy.js"></script>
+<script type="text/javascript" src="photo.js"></script>
+<script type="text/javascript" src="main.js"></script>
 </body>
 </html>

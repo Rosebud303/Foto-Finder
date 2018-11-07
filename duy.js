@@ -1,3 +1,4 @@
-function getClass() {
-  document.querySelector('');
+function getClass(string) {
+  return document.querySelector(string);
 };
+
