@@ -1,33 +1,44 @@
 body {
   color: #FFFFFF;
-  font-family: Raleway;
+  font-family: Open sans, sans-serif;
   background-color: #C2B2B4
 }
 
 h1 {
-  font-size: 54px;
-  margin-top: 9px;
+  font-size: 50px;
+  margin: 0px;
+}
+
+.hi {
+  padding-bottom: 6px;
 }
 
 .nav-bar {
   display: flex;
   justify-content: space-between;
+  padding: 20px;
 }
 
 .search-section {
-  margin-top: 23px;
-  margin-right: 23px;
+  display: flex;
 }
 
 .search-input {
     height: 40px;
     width: 220px;
-    margin-left: 20px;
 }
 
 .search-button {
   height: 46px;
-  margin-left: -4px;
+}
+
+.svg {
+  width: 40px;
+  padding: 5px;
+}
+
+.svg:hover {
+  cursor: pointer;
 }
 
 .title-caption-section {
@@ -61,6 +72,7 @@ h1 {
 
 .button:hover {
   background-color: #C2B2B4;
+  cursor: pointer;
 }
 
 .title-and-input {
@@ -73,8 +85,7 @@ h1 {
 
 
 .foto-svg {
-  width: 81px;
-  height: 59px;
+  height: 45px;
 }
 
 .label-file-input {
@@ -85,6 +96,10 @@ h1 {
   background-color: #5B4447;
   grid-area: midb;
   /*width: 305px;*/
+}
+
+.label-file-input:hover {
+  cursor: pointer;
 }
 
 .view-add-buttons {
@@ -155,6 +170,7 @@ input[type="file"] {
   display: flex;
   justify-content: space-between;
   background-color: #3E2A35;
+  height: 45px;
 }
 
 .hidden {
